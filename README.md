@@ -6,7 +6,7 @@ A modern, full-stack desktop tool designed to collate multiple `.XYZ` molecular 
 
 ## Co-Development
 
-The backend was developed personally, making the "engine.py" file, responsible for parsine through the '.XYZ' coordinate structure, and formatting this for the requirements of DL_POLY. The front end however has been vibecoded, because I am still learning HTML :,(
+The backend was developed personally, making the "engine.py" file, responsible for parsine through the '.XYZ' coordinate structure, and formatting this for the requirements of DL_POLY. The front end however has been vibecoded, because I am still learning front end :,(
 
 ---
 
