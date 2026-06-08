@@ -1,0 +1,5 @@
+{
+  "name": "XYZ Collator",
+  "description": "A tool to collate multiple .XYZ files into a single CONFIG file with custom offsets and ordering.",
+  "requestFramePermissions": []
+}
