@@ -4,27 +4,22 @@ A modern, full-stack desktop tool designed to collate multiple `.XYZ` molecular 
 
 ---
 
-## 🤝 Co-Development & Collaboration
+## Co-Development
 
-This project is a successful co-development effort combining hand-crafted scientific computing with modern interface engineering:
-
-*   **The Computational Core (by The User)**: 
-    Created the complete, robust Python computational backend (`engine.py`). This engine parses `.XYZ` coordinate structures, handles high-precision float transformations, updates offset spaces, and handles the intricate file syntax and formatting requirements of DL_POLY layouts (including setting `IMCON` to 6 and calculating accurate cumulative atom counts).
-*   **The Full-Stack & UI Bridge (by Google AI Studio Assistant)**: 
-    Designed and built the full-stack wrapper. Crafted a responsive, minimalist React/TypeScript single-page application using Tailwind CSS for fluid layout design and micro-animations. Implemented the Express API server that bridges browser requests directly into the Python engine, alongside zero-latency optimistic state updates for rapid, reliable coordinate adjustments.
+The backend was developed personally, making the "engine.py" file, responsible for parsine through the '.XYZ' coordinate structure, and formatting this for the requirements of DL_POLY. The front end however has been vibecoded, because I am still learning HTML :,(
 
 ---
 
-## ⚡ Main Codebase Architecture
+## Main Codebase Architecture
 
 The application is light and highly structured:
-1.  **`engine.py`**: The main computational script written by you in Python. It executes high-speed parsing, offsets coordinates, dynamically re-orders molecular inputs, and compiles the final `CONFIG` string.
-2.  **`server.ts`**: The full-stack Express server bridging frontend requests straight to your Python engine via standard I/O pipes.
-3.  **`src/App.tsx`**: The primary user interface that includes high-performance functional React state management to guarantee inputs update visually instantly while updating safely on the disk behind the scenes.
+1.  **`engine.py`**: The main computational script. It executes file parsing, offsets coordinates, re-orders molecular inputs, and compiles the final `CONFIG` string.
+2.  **`server.ts`**: The full-stack Express server bridging frontend requests straight to the Python engine via standard I/O pipes.
+3.  **`src/App.tsx`**: The primary user interface that includes functional React state management to guarantee inputs update visually instantly while updating safely on the disk behind the scenes.
 
 ---
 
-## ✨ Features
+## Features
 
 *   **Cumulative Atom Counter**: Automatically sums up atom counts from every active file and populates the `CONFIG` file header parameters correctly.
 *   **Default IMCON 6 support**: Ready-configured out of the box to export standard periodic box geometry headers using boundary conditions specified by standard DL_POLY inputs.
@@ -35,7 +30,7 @@ The application is light and highly structured:
 
 ---
 
-## 🚀 How to Run the App Locally
+## How to Run the App Locally
 
 ### 1. Prerequisites
 Make sure you have the following installed on your system:
@@ -60,7 +55,7 @@ The portal runs by default on **`http://localhost:3000`**. Open that up in any s
 
 ---
 
-## 📦 File Layout Output Reference
+## File Layout Output Reference
 
 The compiled configurations closely mimic the standard expected format structure:
 
